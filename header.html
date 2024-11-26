@@ -1,0 +1,112 @@
+<style>
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #89A8B2;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+header a img {
+    width: 50px; 
+    height: auto;
+}
+
+header nav {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px; 
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    margin-top: 120px; 
+}
+
+header nav ul li a:hover{
+    color: #c3c3c3;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header a img {
+        width: 40px;
+    }
+
+    body {
+        margin-top: 14em;
+    }
+}
+
+
+
+</style>
+
+<header>
+    <a href="index.html">
+        <img src="/source/icone.png" title="Ir para página principal" alt="code">
+    </a>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="paginaSimples.html">Página Simples</a>
+            </li>
+            <li>
+                <a href="cssSimples.html">CSS Simples</a>
+            </li>
+            <li>
+                <a href="javaScript.html">Javascript Simples</a>
+            </li>
+            <li>
+                <a href="formulario.html">Formulário</a>
+            </li>
+            <li>
+                <a href="calculadoraSimples.html">Calculadora Simples</a>
+            </li>
+            <li>
+                <a href="layoutResponsivo.html">Layout Responsivo</a>
+            </li>
+            <li>
+                <a href="api.html">API</a>
+            </li>
+        </ul>
+    </nav>
+</header>

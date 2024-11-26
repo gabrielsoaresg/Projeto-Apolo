@@ -1,0 +1,75 @@
+<style>
+    .bloco-texto {
+        padding-top: 17%;
+        padding-left: 40%;
+        font-family: monospace;
+        font-size: 20px;
+    }
+
+    .list-languages {
+        display: flex;
+    }
+    .img-language {
+        width: 100px;
+    }
+
+    .link-portalcurso {
+    color: rgb(0, 26, 255); 
+    text-decoration: none; 
+    }
+
+    .link-portalcurso:link {
+        color: rgb(0, 26, 255); ; 
+    }
+
+    .link-portalcurso:visited {
+        color: rgb(0, 26, 255); ; 
+    }
+    
+    .link-portalcurso:hover {
+        color: white; 
+    }
+
+    .titulo {
+        font-family: monospace;
+        font-size: 20px;
+        padding-top: 15px;
+        padding-left: 62vh;
+    }
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste WebSite</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <h1 class="titulo">Testes de conhecimento para a empresa 
+        <a class="link-portalcurso" href="https://portalcurso.com.br" target="_blank">Portal Curso</a>
+    </h1>
+    <div class="bloco-texto">
+        <p>Linguagens Utilizadas:</p>
+        <ul class="list-languages">
+            <li>
+                <img class="img-language"  src="source/icon-html.png" title="HTML5" alt="html" style="padding-top: 25px;">
+            </li>
+            <li>
+                <img class="img-language" src="source/icon-js.png" title="JavaScript" alt="js" style="padding-top: 20px;">
+            </li>
+            <li>
+                <img class="img-language" src="source/icon-php.png" title="PHP" alt="php" style="padding-top: 40px;">
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer-placeholder"></div>
+</body>
+</html>

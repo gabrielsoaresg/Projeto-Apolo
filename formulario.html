@@ -1,0 +1,117 @@
+<style>
+    .titulo-formulario {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+    }
+
+    .box-formulario {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px;
+        border-radius: 15px;
+        width: 25%;
+        color: white;
+    }
+    fieldset {
+        border: 3px solid dodgerblue;
+        padding: 10px;
+    }
+
+    legend {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-family: monospace;
+        font-size: 20px;
+    }
+
+    .inputUser {
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        letter-spacing: 2px;
+    }
+
+    .input-title {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-family: monospace;
+        font-size: 15px;
+    }
+
+    .div-button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-submit {
+        width: 50%;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+        background-color: dodgerblue;
+        cursor: pointer;
+    }
+
+</style>
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="titulo-formulario">
+        <h1>Contato</h1>
+    </div>
+
+
+    <div class="box-formulario">
+        <form>
+            <fieldset>
+                <legend><b>Formulário</b></legend>
+                <div class="inputBox">
+                    <div class="input-title">Nome:</div>
+                    <input type="text" name="Nome" id="nome" class="inputUser" placeholder="José da Silva">
+                </div>
+                <div class="inputBox">
+                    <div class="input-title">Email:</div>
+                    <input type="email" name="Email" id="email" class="inputUser" placeholder="exemplo@exemplo.com">
+                </div>
+                <div class="inputBox">
+                    <div class="input-title">Mensagem:</div>
+                    <textarea name="Mensagem" id="mensagem" class="inputUser" rows="4" cols="50" placeholder="Digite sua mensagem" style="resize: none;"></textarea>
+                </div>
+                <div class="div-button">
+                    <input type="submit" name="submit" id="submit" class="btn-submit" onclick="mostrarDados()">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <div id="footer-placeholder"></div>
+</body>
+</html>

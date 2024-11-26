@@ -1,0 +1,57 @@
+<style>
+    .titulo-js {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .texto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 45px;
+    }
+
+    .btn-click {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px
+    }
+
+    .btn {
+        width: 10vh;
+        height: 3vh;
+        border-radius: 5px;
+        background-color: blueviolet;
+        color: white;
+        font-family: cursive;
+        cursor: pointer;
+    }
+</style>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Simples</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <div class="titulo-js">
+        <h1>Interatividade</h1>
+    </div>
+    <div class="texto">Clique no botão abaixo e veja a mágica!</div>
+    <div class="btn-click">
+        <button class="btn" onclick="helloWorld()">Clique Aqui</button>
+    </div>
+
+    <div id="footer-placeholder"></div>
+</body>
+</html>

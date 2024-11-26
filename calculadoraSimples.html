@@ -1,0 +1,124 @@
+<style>
+
+    .titulo-calculadora {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-calculadora {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px;
+        border-radius: 15px;
+        width: 25%;
+        color: white;
+    }
+
+    fieldset {
+        border: 3px solid dodgerblue;
+        padding: 10px;
+    }
+
+    legend {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-family: monospace;
+        font-size: 20px;
+    }
+
+    .inputUser {
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        color: white;
+        font-size: 15px;
+        width: 70%;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .div-button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-submit {
+        width: 50%;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+        background-color: dodgerblue;
+        cursor: pointer;
+    }
+
+    .sum-symbol {
+        margin-right: 40px;
+        margin-left: 10px;
+        font-size: 20px;
+
+    }
+
+    .equal-symbol {
+        margin-right: 40px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="titulo-calculadora">
+        <h1>Calculadora</h1>
+    </div>
+
+    <div class="box-calculadora">
+        <form>
+            <fieldset style="display: inline-flex;">
+                <legend>Soma</legend>
+                <div class="inputBox">
+                    <input type="text" name="primeiroNumero" id="num1" class="inputUser">
+                </div>
+                <div class="sum-symbol">
+                    <label><b>+</b></label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="segundoNumero" id="num2" class="inputUser">
+                </div>
+                <div class="equal-symbol">
+                    <label><b>=</b></label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="resultado" id="resultado" class="inputUser" readonly>
+                </div>
+            </fieldset>
+            <div class="div-button">
+                <input type="submit" name="submit" id="submit" class="btn-submit" onclick="somarValores()" value="Calcular">
+            </div>
+        </form>
+    </div>
+
+    <div id="footer-placeholder"></div>
+</body>
+</html>
